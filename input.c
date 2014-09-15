@@ -6,17 +6,11 @@
 
 void main(void)
 {
-	
-	char *big =realloc(NULL, sizeof(char)*10);
-	int i = 0;
-	int to_break = 0;
-	int point = 0;
-	char ch;
+
 	int size = 10;
 	char *buf = (char *)malloc(sizeof(char)*5);
         char temp[5];
-	int p = 0;
-	int index = 0;
+
 	while(fgets(temp,5,stdin) != NULL){
 		strcat(buf,temp);
 		if(strlen(temp)>=4 && temp[3] != '\n' ){
